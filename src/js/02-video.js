@@ -10,6 +10,7 @@ function getPauseTime({ seconds }) {
 }
 
 const startTime = localStorage.getItem('videoplayer-current-time');
-console.log(startTime);
 
-player.setCurrentTime(startTime);
+if (startTime) {
+    player.setCurrentTime(startTime);
+}
