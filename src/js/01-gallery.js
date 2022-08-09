@@ -1,6 +1,6 @@
 // Add imports above this line
 import { galleryItems } from './gallery-items';
-import simplelightbox from 'simplelightbox';
+import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const galleryEl = document.querySelector('.gallery');
@@ -24,7 +24,7 @@ function createGalleryMarkup(galleryItems) {
         .join('');
 }
 
-new simplelightbox('.gallery a', {
+new SimpleLightbox('.gallery a', {
     captions: true,
     captionsData: 'alt',
     captionPosition: 'bottom',
